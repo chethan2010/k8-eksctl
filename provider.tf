@@ -7,7 +7,7 @@ terraform {
   }
   backend"s3"{
     bucket="dev-daw9"
-     key= "expense-dev-jenkins/terraform.tfstate"
+    key= "expense-dev-jenkins/terraform.tfstate"
     region="us-east-1"
     dynamodb_table="daws83s"
 }
