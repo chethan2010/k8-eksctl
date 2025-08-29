@@ -5,7 +5,7 @@ terraform {
       version = ">= 6.0.0"
     }
   }
-  backend"s3"{
+  backend "s3"{
     bucket="dev-daw9"
     key= "expense-dev-jenkins/terraform.tfstate"
     region="us-east-1"
