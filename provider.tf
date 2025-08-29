@@ -2,15 +2,14 @@ terraform {
   required_providers {
     aws = {
       source = "hashicorp/aws"
-      version = "5.60.0"
+      version = ">= 6.0.0"
     }
   }
   backend"s3"{
     bucket="dev-daw9"
-     key= "expense-vpc-p/terraform.tfstate" 
+     key= "expense-dev-jenkins/terraform.tfstate"
     region="us-east-1"
     dynamodb_table="daws83s"
- 
 }
 }
 provider "aws" {
